@@ -1,0 +1,137 @@
+/* Подключаем шрифт Russo One */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Основной фон страницы */
+body {
+  background-color: #595959;
+  color: white;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-nav .nav-link {
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;       /* расстояние между буквами */
+  word-spacing: 10px;        /* расстояние между словами */
+  color: #f0f0f0 !important; /* светлый цвет текста */
+  margin-left: 30px;         /* расстояние между пунктами меню */
+}
+
+.navbar-nav .nav-item:first-child .nav-link {
+  margin-left: 0; /* у первого пункта убираем отступ слева */
+}
+
+
+
+
+
+
+
+
+
+/* Кнопки — жёлтые (FFD000) */
+.btn,
+button,
+.hero-btn {
+  background-color: #FFD000;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 18px 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+}
+
+.btn:hover,
+button:hover,
+.hero-btn:hover {
+  background-color: #e6bc00;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* Заголовки h1 и h2 */
+h1, h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Дополнительные стили по необходимости */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.custom-service-block .text-content h2 {
+  font-size: 30px; /* Размер заголовка */
+  color: #FFD000; /* Цвет заголовка */
+  margin-bottom: 80px; /* Отступ между заголовком и списком */
+}
+
+.custom-service-block .text-content h3 {
+  font-size: 30px; /* Размер заголовка */
+  color: #f3f3f3; /* Цвет заголовка */
+  margin-bottom: 80px; /* Отступ между заголовком и списком */
+}
+
+.custom-service-block .text-content ul {
+  list-style: none; /* Убирает маркеры у списка */
+  padding: 0; /* Убирает внутренний отступ */
+}
+
+.custom-service-block .text-content ul li {
+  font-size: 18px; /* Размер шрифта пунктов списка */
+  margin-bottom: 30px; /* Отступ между пунктами */
+}
+
+.image-content {
+  flex: 1; /* Занимает всю правую область */
+  display: flex;
+  justify-content: flex-end; /* Сдвигает контент вправо */
+  padding-left: 180px; /* Отодвигает картинки еще дальше вправо */
+  gap: 12px;
+}
+
+
+.big-image {
+  width: 310px; /* Размер большой картинки */
+}
+
+.small-images {
+  display: flex; /* Убирает перенос строк */
+  flex-direction: column; /* Размещает маленькие картинки в колонку */
+  gap: 12px; /* Отступы между маленькими изображениями */
+}
+
+.small-images img {
+  width: 310px; /* Размер маленьких картинок */
+}
+
+
+
+
+
+   
