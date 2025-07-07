@@ -22,44 +22,63 @@
       
 
 
-<header class="position-relative">
- 
-  <section class="hero position-relative text-white">
-    <img src="Main_comp.png" class="w-100" alt="">
-    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start px-5">
-      <h1 class="display-4">Täistsükliline esmaklassiline detailimine</h1>
-      <p class="lead">Kaasaegsed tehnoloogiad, tõestatud meetodid ja laitmatud tulemused – ühe katuse all</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Taotle kõnet</a>
-    </div>
-  </section>
-  
-  <!-- Нав -->
-  <nav class="navbar navbar-expand-md navbar-dark position-absolute top-0 start-0 w-100 px-3 px-md-5 py-2 py-md-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="et.html">
-        <!-- Логотип для ПК -->
-        <img src="Надежность квадрата.png" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
-        <!-- Логотип для мобильных -->
-        <img src="LogogMob.png" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
-    </a>
-    
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto text-center text-md-start">
-          <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
-          <li class="nav-item"><a class="nav-link" href="et2.html">Hinnad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontaktid</a></li>
-        </ul>
-        <a href="index.html" class="btn btn-primary ms-md-3 mt-2 mt-md-0">EST</a>
-      </div>
-    </div>
-  </nav>
-</header>
+      <header class="position-relative">
+        <section class="hero position-relative text-white">
+          <img src="Main_comp.png" class="w-100 img-fluid" alt="">
+          
+          <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start px-3 px-md-5 text-center text-md-start">
+            <h1 class="display-5 display-md-3 display-lg-2 mb-2 d-none d-md-block ">Täistsükliline esmaklassiline detailimine</h1>
+            <p class="lead mb-3 d-none d-md-block">Kaasaegsed tehnoloogiad, tõestatud meetodid ja laitmatud tulemused – ühe katuse all</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-5 mt-md-3">Taotle kõnet</a>
+          </div>
+        </section>
+      
+        <!-- Нав -->
+        <nav class="navbar navbar-expand-md navbar-dark px-3 py-2 w-100 position-absolute top-0 start-0 z-3">
+          <div class="container-fluid">
+        
+            <!-- Логотип -->
+            <a class="navbar-brand" href="et.html">
+              <img src="Надежность квадрата.png" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+              <img src="LogogMob.png" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
+            </a>
+        
+            <!-- Бургер кнопка — только на мобильных -->
+            <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Меню для десктопа -->
+            <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
+              <ul class="navbar-nav ms-auto text-center text-md-start">
+                <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
+                <li class="nav-item"><a class="nav-link" href="et2.html">Hinnad</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontaktid</a></li>
+              </ul>
+              <a href="index.html" class="btn btn-primary ms-3">EST</a>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- Offcanvas меню — только на мобильных -->
+        <div class="offcanvas offcanvas-end text-bg-warning d-md-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menüü</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
+              <li class="nav-item"><a class="nav-link" href="et2.html">Hinnad</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Kontaktid</a></li>
+            </ul>
+            <div class="text-center mt-3">
+              <a href="index.html" class="btn btn-dark">RUS</a>
+            </div>
+          </div>
+        </div>
 
 <!-- 👇 ОБЯЗАТЕЛЬНО внизу страницы -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
@@ -125,35 +144,35 @@
 </style>
 <div class="container" data-aos="fade-up">
   <div class="row">
-     <div class="col-md-4 section" data-aos="fade-up">
-    <img src="1.png" alt="1" class="background-number">
-    <h2>Erialane koolitus</h2>
-    <p>Meistrid on saanud väljaõppe Peterburi juhtivas detailikoolis</p>
-</div>
-<div class="col-md-4 section" data-aos="fade-up">
-    <img src="2.png" alt="2" class="background-number">
-    <h2>Tõestatud kvaliteet</h2>
-    <p>Töötame vastavalt standarditele ja omame ametlikke sertifikaate</p>
-</div>
-<div class="col-md-4 section" data-aos="fade-up">
-    <img src="3.png" alt="3" class="background-number">
-    <h2>Kaasaegne varustus</h2>
-    <p>Kasutame uusimaid seadmeid ja ainult kvaliteetseid materjale</p>
-</div>
-<div class="col-md-4 section" data-aos="fade-up">
-    <img src="4.png" alt="4" class="background-number">
-    <h2>Teenuste täistsükkel</h2>
-    <p>Alates puhastusest kuni kaitseni – kõik ühest kohast, ilma lisavaevata</p>
-</div>
-<div class="col-md-4 section" data-aos="fade-up">
-    <img src="5.png" alt="5" class="background-number">
-    <h2>Individuaalne lähenemine</h2>
-    <p>Arvestame iga auto eripärade ja omaniku soovidega</p>
-</div>
-<div class="col-md-4 section" data-aos="fade-up">
-    <img src="6.png" alt="6" class="background-number">
-    <h2>Ausus ja läbipaistvus</h2>
-    <p>Meie juures ei ole varjatud tasusid – teate täpselt, mille eest maksate</p>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="1.png" alt="1" class="background-number">
+          <h2>Kutsealane koolitus</h2>
+          <p>Meistrid said väljaõppe Peterburi juhtivas detailikoolis</p>
+      </div>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="2.png" alt="2" class="background-number">
+          <h2>Tõestatud kvaliteetо</h2>
+          <p>Töötame vastavalt standarditele ja omame ametlikke sertifikaate</p>
+      </div>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="3.png" alt="3" class="background-number">
+          <h2>Kaasaegne varustus</h2>
+          <p>Kasutame uusi seadmeid ja ainult kvaliteetseid materjale</p>
+      </div>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="4.png" alt="4" class="background-number">
+          <h2>Teenuste täielik tsükkel</h2>
+          <p>Puhastusest kaitseni – kõik ühes kohas, ilma tarbetu vaevata</p>
+      </div>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="5.png" alt="5" class="background-number">
+          <h2>Individuaalne lähenemine</h2>
+          <p>Arvestame iga auto omaduste ja omaniku soovidega</p>
+      </div>
+      <div class="col-md-4 section" data-aos="fade-up">
+          <img src="6.png" alt="6" class="background-number">
+          <h2>Ausus ja läbipaistvus</h2>
+          <p>Varjatud teenuseid pole – teate ette, mille eest maksate</p>
       </div>
   </div>
 </div>
@@ -166,7 +185,7 @@
   <div style="padding-left: 40px; padding-right: 50px;">
   <section class="services" id="services" data-aos="fade-up">
     <h2>Meie teenused</h2>
-    <p class="lead">Premium-teenuste täielik valik – hoolikalt, täpselt ja garanteeritud tulemusega</p>
+    <p class="lead">Täielik valik premium-teenuseid – hoolikalt, täpselt ja garanteeritud tulemusega</p>
   </div>
 
 
@@ -192,8 +211,8 @@
 
             <img src="stas.png" alt="Большая картинка" class="big-image d-none d-md-block">
             <div class="small-images">
-                <img src="bmwe92.png" alt="Маленькая картинка 1">
-                <img src="mazda6-isp.png" alt="Маленькая картинка 2">
+                <img src="1blok2_zamena.png" alt="Маленькая картинка 1">
+                <img src="1blok3.png" alt="Маленькая картинка 2">
             </div>
         </div>
     </div>
@@ -360,7 +379,7 @@
         <!-- Левая колонка (1inst сверху, 2inst снизу) -->
         <div class="col-md-6 d-flex flex-column align-items-center" data-aos="fade-up">
             <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="mazda6norm 1.png" alt="Красная Mazda" class="w-100 rounded shadow mb-3">
+                <img src="mazda6norm 1.png.png" alt="Красная Mazda" class="w-100 rounded shadow mb-3">
             </a>
             <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                 <img src="2inst.png" alt="Чёрный Mercedes-Benz" class="w-100 rounded shadow">
@@ -388,37 +407,28 @@
       <div class="col-12 col-md-6 text-start" data-aos="fade-up">
           <img src="key.png" alt="Новый автомобиль" class="mb-3" width="190">
           <h3>Uus auto</h3>
-          <p>Isegi uued autod salongist vajavad kvaliteetset pesu.<br> 
-              Sageli pühitakse neid hooletult, mis võib kahjustada lakipinda.<br> 
-              Soovitame lasta auto professionaalses pesulas hoolikalt puhastada kohe pärast ostmist.</p>
+          <p>Isegi uued autod müügisalongis vajavad<br> kvaliteetset pesu.<br>
+            Neid pühitakse sageli hooletult, mis võib lakki kahjustada.<br> 
+            Soovitame teil lasta end kohe pärast ostmist professionaalsel pesulas pesta.</p>
       </div>
       <!-- Второй блок -->
       <div class="col-12 col-md-6 text-start" data-aos="fade-up">
           <img src="spped.png" alt="Автомобиль с пробегом" class="mb-3" width="190">
           <h3>Kasutatud auto</h3>
-          <p>
-  Kui soovid oma auto välimust värskendada,<br>
-  läiget taastada või auto järelturuks ette valmistada –<br>
-  detailpesu on suurepärane valik.
-</p>
+          <p>Kui soovid oma auto välimust värskendada,<br>
+            taasta läige või korrasta oma auto<br> järelturult - detailpesu on suurepärane valik.</p>
       </div>
       <!-- Третий блок -->
       <div class="col-12 col-md-6 text-start" data-aos="fade-up">
           <img src="211.png" alt="Загрязнения на кузове" class="mb-3" width="190">
           <h3>Kehal on nähtavaid plekke</h3>
-          <p>
-  Regulaarne professionaalne puhastus aitab säilitada<br>
-  auto välimust ja pikendab värvikihi eluiga.
-</p>
+          <p>Regulaarne professionaalne puhastus aitab säilitada välimust<br> auto välimust ja pikendavad värvikihi eluiga.</p>
       </div>
       <!-- Четвёртый блок -->
       <div class="col-12 col-md-6 text-start" data-aos="fade-up">
           <img src="214.png" alt="Предпродажная подготовка" class="mb-3" width="190">
           <h3>Müügieelne ettevalmistus</h3>
-          <p>
-  Enne müümist on oluline jätta hea mulje.<br>
-  Detailne pesu annab autole värske ja hoolitsetud välimuse.
-</p>
+          <p>Enne müümist on oluline jätta hea mulje.<br> Detailne pesu muudab teie auto värskeks ja hoolitsetud välimuseks.</p>
       </div>
   </div>
 </div>
@@ -465,19 +475,33 @@
 
 
  <footer class="position-relative" data-aos="fade-up">
+
+  <!-- Мобильная версия блока контактов -->
+  <div class="d-block d-md-none text-center p-4" style="background-color: #595959;">
+    <h2 class="text-white">Kontaktid</h2>
+    <p class="text-white">+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
+    <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-white">
+      <img src="insta.png" alt="Instagram" width="24" class="me-2">
+      <span>tank_detailing</span>
+    </a>
+  </div>
+
+  <!-- Карта — одна на все версии -->
   <a href="https://www.google.com/maps/place/Suur-Sõjamäe+25a%2F3" target="_blank">
     <img src="map.png" alt="Фон футера" class="w-100">
   </a>
-  <div class="position-absolute top-0 start-0 text-center p-5 shadow rounded" style="background-color: #595959; margin-left: 30px;" data-aos="fade-up">
-      <h2>Kontaktid</h2>
-      <p>+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
-      <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-dark">
-        <img src="insta.png" alt="Instagram" width="24" class="me-2">
-        <span>tank_detailing</span>
-      </a>
-  </div>
-</footer>
 
+  <!-- Десктопный блок контактов — поверх карты -->
+  <div class="position-absolute top-0 start-0 d-none d-md-block text-center p-5 shadow rounded" style="background-color: #595959; margin-left: 30px;">
+    <h2 class="text-white">Kontaktid</h2>
+    <p class="text-white">+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
+    <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-white">
+      <img src="insta.png" alt="Instagram" width="24" class="me-2">
+      <span>tank_detailing</span>
+    </a>
+  </div>
+
+</footer>
 <p style="margin-left: 30px;">© Tank Detailing, 2025</p>
 <a href="https://www.instagram.com/ne.klinika/" target="_blank"
 <p style="margin-left: 30px;">
