@@ -11,42 +11,60 @@
         <!-- Google Fonts: Russo One -->
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
 
-         <!-- AOS CSS -->
-         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       
         <!-- Собственные стили -->
         <link rel="stylesheet" href="style.css" />
       </head>
 
-      <!-- Нав -->
-      <nav class="navbar navbar-expand-md navbar-dark position-absolute top-0 start-0 w-100 px-3 px-md-5 py-2 py-md-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <!-- Логотип для ПК -->
-            <img src="Надежность квадрата.png" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
-            <!-- Логотип для мобильных -->
-            <img src="LogogMob.png" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
-        </a>
+        </head>
+        <body>
         
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto text-center text-md-start">
-              <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Услуги</a></li>
-              <li class="nav-item"><a class="nav-link" href="services.html">Стоимость</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Контакты</a></li>
-            </ul>
-            <a href="et2.html" class="btn btn-primary ms-md-3 mt-2 mt-md-0">EST</a>
-          </div>
-        </div>
+            <nav class="navbar navbar-expand-md navbar-dark px-3 py-2 w-100 position-absolute top-0 start-0 z-3">
+                <div class="container-fluid">
+              
+                  <!-- Логотип -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="Надежность квадрата.png" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+                    <img src="LogogMob.png" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
+                  </a>
+              
+                 
+                  <!-- Меню для десктопа -->
+                  <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
+                    <ul class="navbar-nav ms-auto text-center text-md-start">
+                      <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                      <li class="nav-item"><a class="nav-link" href="index.html">Услуги</a></li>
+                      <li class="nav-item"><a class="nav-link" href="services.html">Цены</a></li>
+                      <li class="nav-item"><a class="nav-link" href="index.html">Контакты</a></li>
+                    </ul>
+                    <a href="et2.html" class="btn btn-primary ms-3">EST</a>
+                  </div>
+                </div>
+              </nav>
+              
+              <!-- Offcanvas меню — только на мобильных -->
+              <div class="offcanvas offcanvas-end text-bg-warning d-md-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMenuLabel">Меню</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Контакты</a></li>
+                  </ul>
+                  <div class="text-center mt-3">
+                    <a href="et.html" class="btn btn-dark">EST</a>
+                  </div>
+                </div>
+              </div>
       </nav>
-    </header>
     
     
     <section id="about" class="container py-5" data-aos="fade-up">
@@ -195,10 +213,10 @@
         <ul>
             <li>Детейлинг полировка ЛКП автомобиля</li>
             <li>Полировка оптики (передние фары и задние фонари)</li>
-            <li>Защитное керамическое покрытие ЛКП – II слоя</li>
-            <li>Защитное покрытие антидождя на передней полусфере автомобиля</li>
-            <li>Озонирование салона</li>
-            <li>Чернение наружного пластика</li>
+            <li>Защитное керамическое покрытие ЛКП – II слой</li>
+            <li>Защитное покрытие антидождя на передней полюфере автомобиля</li>
+            <li>Уголеврение салона</li>
+            <li>Универсальная кондиция пластика салона</li>
             <li>Химчистка салона</li>
         </ul>
         <div class="price-container" data-aos="fade-up">
@@ -222,7 +240,7 @@
             <li>Защитное керамическое покрытие для колесных дисков (лицевая часть)</li>
             <li>Очистка хромированных элементов кузова</li>
             <li>Защитное покрытие антидождь для всех стекол автомобиля</li>
-            <li>Полная химчистка салона</li>
+            <li> Полный детейлинг химчистка салона</li>
             <li>Нанесение защитного покрытия на кожаные изделия</li>
             <li>Консервация пластиковых и резиновых элементов интерьера</li>
             <li>Дезинфекция салона автомобиля и системы кондиционирование/отопления</li>
@@ -265,134 +283,139 @@
 
 
 
-<div class="polishing-wrapper">
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:160px;" data-aos="fade-up">
-        <h2>Полировка</h2>
-        <img src="Line 1.png" alt="Line">
+<style>
+    .section-title {
+      margin-top: 160px;
+      padding: 0 15px;
+    }
+  
+    .section-title img {
+      width: 150px;
+    }
+  
+    @media (max-width: 768px) {
+      .section-title img {
+        display: none;
+      }
+    }
+  
+    .service-container {
+      margin-bottom: 30px;
+    }
+  
+    .service-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .price {
+      font-weight: bold;
+      color: #FFD000;
+    }
+  </style>
+  
+  <div class="container">
+    <!-- Повторяющийся блок: -->
+    <div class="section-title" data-aos="fade-up">
+      <h2>Полировка</h2>
+      <img src="Line 1.png" alt="Line">
     </div>
-
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:60px;" data-aos="fade-up">
-        <div class="service-container">
-            <h3 class="service-title">- Легкая полировка кузова - придание блеска</h3>
-            <div class="price">150€ | 200€ | 250€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Восстановительная полировка кузова</h3>
-            <div class="price">250€ | 300€ | 350€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Глубокая полировка кузова</h3>
-            <div class="price">350€ | 400€ | 450€</div>
-        </div>
+  
+    <div class="row px-3" data-aos="fade-up">
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Легкая полировка кузова - придание блеска</h3>
+        <div class="price">150€ | 200€ | 250€</div>
+      </div>
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Восстановительная полировка кузова</h3>
+        <div class="price">250€ | 300€ | 350€</div>
+      </div>
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Глубокая полировка кузова</h3>
+        <div class="price">350€ | 400€ | 450€</div>
+      </div>
     </div>
-</div>
-
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:160px;" data-aos="fade-up">
-    <h2>Керамика</h2>
-    <img src="Line 1.png" alt="Line">
-</div>
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:60px;" data-aos="fade-up">
-    <div class="service-container">
-        <h3 class="service-title">-Защита лакокрасочного покрытия от<br> загрязнений и гидрофобный эффект.</h3>
-        <div class="price">от 100€</div>
+  
+    <!-- Далее другие секции — по тому же шаблону: -->
+  
+    <div class="section-title text-center mb-4" data-aos="fade-up">
+      <h2>Керамика</h2>
+      <img src="Line 1.png" alt="Line" class="img-fluid d-none d-md-inline-block" style="max-width: 200px;">
     </div>
-   
-</div>
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:160px;"></div>
     
-<div class="polishing-wrapper">
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:160px;" data-aos="fade-up">
-        <h2>Защита и уход</h2>
-        <img src="Line 1.png" alt="Line">
+    <div class="container px-4 px-md-5" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 service-container text-center text-md-start">
+          <h3 class="service-title"> Керамическая обработка</h3>
+          <p class="mb-2">-Защита лакокрасочного покрытия и придание глубины цвета и блеска 
+            </p>
+          <div class="price">от 100€</div>
+        </div>
+      </div>
     </div>
-
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:60px;" data-aos="fade-up">
-        <div class="service-container">
-            <h3 class="service-title">- Полировка фар и фонарей</h3>
-            <div class="price">50€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Обработка "Антидождь"</h3>
-            <div class="price">50€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Чистка и защита дисков керамикой</h3>
-            <div class="price">100€</div>
-        </div>
+    
+    
+  
+    <div class="section-title" data-aos="fade-up">
+      <h2>Защита и уход</h2>
+      <img src="Line 1.png" alt="Line">
     </div>
-</div>
-
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:160px;" data-aos="fade-up">
-    <h2>Детейлинг экстерьера</h2>
-    <img src="Line 1.png" alt="Line">
-</div>
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:60px;" data-aos="fade-up">
-    <div class="service-container">
+  
+    <div class="row px-3" data-aos="fade-up">
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Полировка фар и фонарей</h3>
+        <div class="price">50€</div>
+      </div>
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Обработка "Антидождь"</h3>
+        <div class="price">50€</div>
+      </div>
+      <div class="col-12 service-container">
+        <h3 class="service-title">- Чистка и защита дисков керамикой</h3>
+        <div class="price">100€</div>
+      </div>
+    </div>
+  
+    <div class="section-title" data-aos="fade-up">
+      <h2>Детейлинг экстерьера</h2>
+      <img src="Line 1.png" alt="Line">
+    </div>
+  
+    <div class="row px-3" data-aos="fade-up">
+      <div class="col-12 service-container">
         <h3 class="service-title">- Комплексная химчистка салона</h3>
-        <div class="price">от 150€</div>
-    </div>
-    <div class="service-container">
+        <div class="price">От 150€</div>
+      </div>
+      <div class="col-12 service-container">
         <h3 class="service-title">- Сухая уборка салона</h3>
-        <div class="price">от 30€</div>
-    </div>
-    <div class="service-container">
+        <div class="price">От 30€</div>
+      </div>
+      <div class="col-12 service-container">
         <h3 class="service-title">- Очистка и защита кожи</h3>
-        <div class="price">от 40€</div>
-    </div>
-    <div class="service-container">
+        <div class="price">От 40€</div>
+      </div>
+      <div class="col-12 service-container">
         <h3 class="service-title">- Озонирование и ароматизация</h3>
         <div class="price">40€</div>
+      </div>
     </div>
-</div>
-
-<div style="padding-left: 40px; padding-right: 50px; margin-top:160px;"></div>
-
-
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:160px;" data-aos="fade-up">
-        <h2>Дополнительные услуги</h2>
-        <img src="Line 1.png" alt="Line">
+  
+    <div class="section-title" data-aos="fade-up">
+      <h2>Дополнительные услуги</h2>
+      <img src="Line 1.png" alt="Line">
     </div>
-
-    <div style="padding-left: 40px; padding-right: 50px; margin-top:60px;" data-aos="fade-up">
-        <div class="service-container">
-            <h3 class="service-title">- Мойка двигателя</h3>
-            <div class="price">50€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Локальное удаление глубоких царапин на ЛКП</h3>
-            <div class="price">20€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Удаление вмятин без покраски (PDR)</h3>
-            <div class="price">от 150€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Восстановление фар/фонарей</h3>
-            <div class="price">от 150€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Перетяжка руля</h3>
-            <div class="price">от 200€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Ремонт кожи</h3>
-            <div class="price">от 90€</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- Перетяжка салона</h3>
-            <div class="price">Договорная</div>
-        </div>
-        <div class="service-container">
-            <h3 class="service-title">- -Перетяжка сидений</h3>
-            <div class="price">Договорная</div>
-        </div>
+  
+    <div class="row px-3" data-aos="fade-up">
+      <div class="col-12 service-container"><h3 class="service-title">- Мойка двигателя</h3><div class="price">50€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Локальное удаление глубоких царапин на ЛКП</h3><div class="price">20€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Удаление вмятин без покраски (PDR)</h3><div class="price">Alates 150€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Восстановление фар/фонарей</h3><div class="price">От 150€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Перетяжка руля</h3><div class="price">от 200€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Ремонт кожи</h3><div class="price">От 90€</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Перетяжка салона</h3><div class="price">Договорная</div></div>
+      <div class="col-12 service-container"><h3 class="service-title">- Перетяжка сидений</h3><div class="price">Договорная</div></div>
     </div>
-
+  </div>
     <div class="col-12 col-md-6 text-start" style="margin-bottom: 40px;"></div>
 
   
@@ -432,19 +455,34 @@
 
 
 
- <footer class="position-relative">
-  <a href="https://www.google.com/maps/place/Suur-Sõjamäe+25a%2F3" target="_blank">
-    <img src="map.png" alt="Фон футера" class="w-100">
-  </a>
-  <div class="position-absolute top-0 start-0 text-center p-5 shadow rounded" style="background-color: #595959; margin-left: 30px;" data-aos="fade-up">
-      <h2>Контакты</h2>
-      <p>+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
-      <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-dark">
+ <footer class="position-relative" data-aos="fade-up">
+
+    <!-- Мобильная версия блока контактов -->
+    <div class="d-block d-md-none text-center p-4" style="background-color: #595959;">
+      <h2 class="text-white">Контакты</h2>
+      <p class="text-white">+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
+      <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-white">
         <img src="insta.png" alt="Instagram" width="24" class="me-2">
         <span>tank_detailing</span>
       </a>
-  </div>
-</footer>
+    </div>
+  
+    <!-- Карта — одна на все версии -->
+    <a href="https://www.google.com/maps/place/Suur-Sõjamäe+25a%2F3" target="_blank">
+      <img src="map.png" alt="Фон футера" class="w-100">
+    </a>
+  
+    <!-- Десктопный блок контактов — поверх карты -->
+    <div class="position-absolute top-0 start-0 d-none d-md-block text-center p-5 shadow rounded" style="background-color: #595959; margin-left: 30px;">
+      <h2 class="text-white">Контакты</h2>
+      <p class="text-white">+372 58432 884<br>tankdetailing@gmail.com<br>Suur-Sõjamäe 25a/3</p>
+      <a href="https://www.instagram.com/tank_detailing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="d-inline-flex align-items-center text-white">
+        <img src="insta.png" alt="Instagram" width="24" class="me-2">
+        <span>tank_detailing</span>
+      </a>
+    </div>
+  
+  </footer>
 
 <p style="margin-left: 30px;">© Tank Detailing, 2025</p>
 <a href="https://www.instagram.com/ne.klinika/" target="_blank"
